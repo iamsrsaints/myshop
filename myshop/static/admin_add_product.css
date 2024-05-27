@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../static/images/fundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo com transparência */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.page-title {
+    font-size: 32px;
+    text-align: center;
+    color: #663399;
+    margin-bottom: 20px;
+}
+
+.flash-messages {
+    list-style: none;
+    padding: 0;
+}
+
+.flash-messages li {
+    margin-bottom: 10px;
+    background-color: #f8d7da; /* Cor de fundo para mensagens de erro */
+    color: #721c24; /* Cor do texto para mensagens de erro */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.product-form {
+    display: grid;
+    gap: 15px;
+}
+
+.form-group {
+    display: grid;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+textarea,
+input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.character-count {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.submit-button {
+    padding: 10px 16px;
+    background-color: #663399;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #663399;
+}

@@ -1,0 +1,140 @@
+/* Estilos para o corpo com imagem de fundo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../static/images/fundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: backgroundMove 20s linear infinite;
+    position: relative;
+}
+
+/* Overlay para melhorar o contraste */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  /* Overlay semi-transparente */
+    z-index: -1; /* Colocar atrás do conteúdo */
+}
+
+/* Estilos para o container */
+.container {
+    max-width: 350px; /* Reduzindo o tamanho */
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Bordas mais sutis */
+    text-align: center;
+    position: relative; /* Para garantir que o z-index funcione */
+    z-index: 1;
+}
+
+/* Estilos para o título */
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para os rótulos dos campos de entrada */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* Estilos para os campos de entrada de texto */
+.form-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #8e44ad;
+    border-radius: 8px;
+    font-size: 17px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.form-field:focus {
+    border-color: #663399;
+    box-shadow: 0 0 8px rgba(102, 51, 153, 0.5);
+    outline: none;
+}
+
+/* Estilos para o botão de registro */
+.register-button {
+    background-color: #8e44ad;
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.register-button:hover {
+    background-color: #663399;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(102, 51, 153, 0.2);
+}
+
+/* Estilos para os links de login */
+.login-link {
+    color: #8e44ad;
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.login-link:hover {
+    color: #663399;
+    text-decoration: underline;
+}
+
+/* Estilos para a mensagem de erro */
+.error-message {
+    background-color: #000000;
+    color: #000000;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(192, 57, 43, 0.3);
+    animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+/* Animação para o fundo */
+@keyframes backgroundMove {
+    0% { background-position: center; }
+    50% { background-position: center 10px; }
+    100% { background-position: center; }
+}
+
+/* Estilos para a lista de mensagens flash de erro */
+.flash-messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #c0392b;
+}

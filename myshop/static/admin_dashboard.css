@@ -1,0 +1,158 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo na horizontal */
+    align-items: flex-start; /* Alinha o conteúdo ao topo verticalmente */
+    min-height: 100vh;
+    background: url('../static/images/fundo.jpg') no-repeat center center fixed;
+    background-size: cover; /* Garante que a imagem cubra todo o fundo */
+    animation: animateBackground 60s linear infinite; /* Animação de movimento */
+}
+
+.logout-button {
+    background-color: #663399;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    margin-left: auto; /* Coloca o botão no lado direito */
+    align-self: flex-end; /* Alinha o botão ao final do contêiner */
+}
+
+.logout-button:hover {
+    transform: scale(1.1);
+}
+
+
+
+.admin-dashboard {
+    max-width: 800px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Alterado para coluna */
+}
+
+/* Estilos do cabeçalho */
+.admin-header {
+    background-color: #663399;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between; /* Coloca os elementos no espaço disponível */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.admin-header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.logout-button {
+    background-color: #663399;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.admin-menu {
+    background-color: #663399;
+    color: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 0 0 8px 8px; /* Ajustado o raio do canto inferior esquerdo */
+    margin-top: 20px; /* Adicionado margem superior */
+    align-self: flex-start; /* Alinha o menu à esquerda */
+}
+
+.admin-menu h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff6b00;
+}
+
+.admin-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-menu ul li {
+    margin-bottom: 10px;
+}
+
+.admin-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.admin-menu ul li a:hover {
+    color: #ff6b00;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.admin-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.admin-content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.admin-content p {
+    font-size: 18px;
+    color: #777;
+}
+
+.mensagem {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.mensagem-sucesso {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.mensagem-erro {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Estilo para animação de fundo */
+@keyframes animateBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
